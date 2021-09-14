@@ -1,0 +1,32 @@
+* {
+    font-size: 20px;
+    background-color: #ddd8d8;
+}
+
+.cabecalho {
+    font-size: 50px;
+    padding: 20px;
+}
+
+.titulo-centralizado {
+    text-align: center;
+    font-size: 40px;
+}
+
+#banner {
+    width: 100%;
+    
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+#imagemBeneficios {
+    width: 50%;
+    padding-right: 0px;
+}
