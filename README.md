@@ -1,5 +1,5 @@
-Pasta destinada para os projetos da trilha de FRONT-END de cursos e imersões Alura.
+Pasta destinada para os projetos de FRONT-END de cursos e imersões Alura.
 
 Projetos em andamento:
  - Barbearia Alura 
-	Sim Contatos.
+	Criação do site de uma barbearia fictícia usando HTML e CSS, contendo as páginas Home, Serviços e Contatos.
