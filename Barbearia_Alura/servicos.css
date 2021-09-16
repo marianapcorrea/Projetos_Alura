@@ -69,4 +69,15 @@ nav a {
     font-size: 18;
     font-style: italic;
 }
+
+nav a:hover {
+    
+    color:#c47c41;
+
+}
+
+.atual {
+    text-decoration: underline overline;
+    text-decoration-style: dotted ;
+   }
    
