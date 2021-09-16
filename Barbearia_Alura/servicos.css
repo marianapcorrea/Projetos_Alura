@@ -71,9 +71,8 @@ nav a {
 }
 
 nav a:hover {
-    
+    font-size: 25px;
     color:#c47c41;
-
 }
 
 .atual {
@@ -81,3 +80,27 @@ nav a:hover {
     text-decoration-style: dotted ;
    }
 
+.servicos li:hover {
+    border-color: #c47c41;
+    }
+.servicos li:hover h2{
+    font-size: 34px
+
+}
+
+.servicos li:active {
+    border-color: rgb(42, 68, 36);
+}
+
+footer {
+    text-align: center;
+    color: #ddd8d8;
+    background-image: url(imagens/bg.jpg);
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+#copyright {
+    font-size: 18px;
+    margin: 20px 0;
+}
