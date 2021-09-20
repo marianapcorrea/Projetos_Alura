@@ -138,3 +138,9 @@ form label, form p{
     margin: 20px 0;
 }
 
+.botao-submit {
+    font-size: 17px;
+    margin: 15px 130px;
+    padding: 17px 70px;
+    border-radius: 10px;
+}
