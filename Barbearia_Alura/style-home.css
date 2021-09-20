@@ -86,3 +86,11 @@ nav a:hover {
     text-decoration: underline overline;
     text-decoration-style: dotted ;
    }
+
+footer {
+    text-align: center;
+    color: #ddd8d8;
+    background-image: url(imagens/bg.jpg);
+    padding: 40px 0;
+    box-sizing: border-box;
+}
