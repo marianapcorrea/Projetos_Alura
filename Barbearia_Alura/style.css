@@ -1,52 +1,3 @@
-#banner {
-    background-color: #ddd8d8;
-    width:100%;
-}
-
-.cabecalho {
-    font-size: 50px;
-    padding: 20px;
-    text-align: center;
-    font-weight: bolder;
-    font-style: italic;
-}
-
-.principal{
-    background-color: #ddd8d8;
-    padding: 30px;
-}
-
-.titulo-centralizado {
-    text-align: center;
-    font-size: 40px;
-}
-
-.beneficios {
-    background-color: #f3f1f1;
-    padding: 20px;;
-}
-
-#beneficios {
-	background-color: #f3f1f1;
-}    
-
-.beneficios ul{
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-    text-align: center;
-    font-style: italic;
-}
-.beneficios li {
-    background-color: inherit;
-}
-
-#imagemBeneficios {
-    width: 50%;
-    padding-right: 0px;
-}
-
 header{
     background:#ddd8d8;
     padding: 20px;
@@ -77,6 +28,48 @@ nav a {
         text-decoration: none;
 }
 
+.servicos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.servicos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 450px;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}  
+
+.servicos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.servicos p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.valor {
+    font-size: 22px;
+    font-weight: bold;
+   
+}
+
+.a-partir {
+    font-size: 18;
+    font-style: italic;
+}
+
 nav a:hover {
     font-size: 25px;
     color:#c47c41;
@@ -86,3 +79,28 @@ nav a:hover {
     text-decoration: underline overline;
     text-decoration-style: dotted ;
    }
+
+.servicos li:hover {
+    border-color: #c47c41;
+    }
+.servicos li:hover h2{
+    font-size: 34px
+
+}
+
+.servicos li:active {
+    border-color: rgb(42, 68, 36);
+}
+
+footer {
+    text-align: center;
+    color: #ddd8d8;
+    background-image: url(imagens/bg.jpg);
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+#copyright {
+    font-size: 18px;
+    margin: 20px 0;
+}
