@@ -28,8 +28,27 @@
                <input type="text" id="email">
                <label for="telefone">Telefone: </label>
                <input type="number" id="telefone">
-               <input type="submit" value="Enviar">
+               
+               <label for="mensagem"> Mensagem</label>
+               <textarea id="mensagem"></textarea>  <!-- O textarea permite inputs de usuários que não se limitam a apenas uma linha. Como é uma tag de conteúdo, ela abre e fecha. -->
+               
+               <div>
+                    <p>Em qual canal você gostaria de receber nossa resposta?</p>
 
+                    <label for="radio-email">E-mail</label>
+                    <input type="radio" name="contato" value="email" id="radio-email">
+
+                    <label for="radio-telefone">Telefone</label>
+                    <input type="radio" name="contato" value="telefone" id="radio-telefone">
+
+                    <label for="radio-whatsapp">WhatsApp</label>
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                    <!-- radio é um botão que permite realizar uma opção entre um grupo de possibilidades. o atributo name agrupa essas opções, de forma a permitir que apenas uma delas fique marcada (sem isso, poderia-se escolher mais de uma opção) -->
+                </div>    
+
+                <label><input type="checkbox"> Gostaria de receber comunicações com novidades e descontos por e-mail?</label>  <!-- O input dentro do label elimina necessidade de criar um elemento input separado-->
+
+               <input type="submit" value="Enviar">
            </form>
         </main>
 
