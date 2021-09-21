@@ -144,3 +144,13 @@ form label, form p{
     padding: 17px 70px;
     border-radius: 10px;
 }
+
+select {
+    font-size: 17px;
+    margin: 10px 20px;
+    padding: 5px ;
+}
+
+.periodo {
+    margin: 20px 0;
+}

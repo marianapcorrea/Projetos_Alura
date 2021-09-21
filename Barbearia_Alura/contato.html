@@ -44,9 +44,18 @@
                         <label for="radio-whatsapp">WhatsApp <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"></label>            
                     </div>
                     <!-- radio é um botão que permite realizar uma opção entre um grupo de possibilidades. o atributo 'name agrupa essas opções, de forma a permitir que apenas uma delas fique marcada (sem isso, poderia-se escolher mais de uma opção) -->
-                </div>    
+                </div>  
 
-                <label class="checkbox">Autorizo o envio de novidades e descontos da Barbearia Alura em meu e-mail. <input type="checkbox"></label>  <!-- O input dentro do label elimina necessidade de criar um elemento input separado-->
+                <div class="periodo">
+                    <p>Prefiro atendimento no seguinte período: </p>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </div>
+                                
+                <label class="checkbox">Quero receber as novidades e descontos da Barbearia Alura em meu e-mail. <input type="checkbox"></label>  <!-- O input dentro do label elimina necessidade de criar um elemento input separado-->
 
                 <input type="submit" value="Enviar" class="botao-submit">
                 
