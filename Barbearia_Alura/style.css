@@ -140,9 +140,16 @@ form label, form legend{
 
 .botao-submit {
     font-size: 17px;
+    font-weight: bold;
     margin: 15px 130px;
     padding: 15px 50px;
     border-radius: 10px;
+}
+
+.botao-submit:hover {
+    background: #adabab;
+    transition: 1s all;
+    transform: scale(1.2)
 }
 
 select {
