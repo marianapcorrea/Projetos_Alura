@@ -23,12 +23,13 @@
         <main>
            <form>
                <label for="nomecompleto"> Nome Completo: </label>
-               <input type="text" id="nomecompleto" class="input-padrao">
+               <input type="text" id="nomecompleto" class="input-padrao" required>
                <label for="email"> E-mail: </label>
-               <input type="text" id="email" class="input-padrao">
+               <input type="text" id="email" class="input-padrao" required placeholder="meuemail@dominio.com">
                <label for="telefone">Telefone: </label>
-               <input type="number" id="telefone" class="input-padrao">
-               
+               <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+               <!--O required torna o preenchimento do campo obrigatório.-->
+               <!--O placeholder mostra um formato válido, que será substituido pelo input do usuário-->
                <label for="mensagem">Mensagem: </label>
                <textarea rows="10" id="mensagem" class="input-padrao"></textarea>  <!-- O textarea permite inputs de usuários que não se limitam a apenas uma linha. Como é uma tag de conteúdo, ela abre e fecha. -->
                
@@ -41,7 +42,8 @@
                          
                         <label for="radio-telefone">Telefone <input type="radio" name="contato" value="telefone" id="radio-telefone"></label>
                           
-                        <label for="radio-whatsapp">WhatsApp <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"></label>            
+                        <label for="radio-whatsapp">WhatsApp <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked></label>            
+                    <!--checked deixa uma caixa marcada automaticamente, como sugestão-->
                     </div>
                     <!-- radio é um botão que permite realizar uma opção entre um grupo de possibilidades. o atributo 'name agrupa essas opções, de forma a permitir que apenas uma delas fique marcada (sem isso, poderia-se escolher mais de uma opção) -->
                 </div>  
@@ -55,7 +57,7 @@
                     </select>
                 </div>
                                 
-                <label class="checkbox">Quero receber as novidades e descontos da Barbearia Alura em meu e-mail. <input type="checkbox"></label>  <!-- O input dentro do label elimina necessidade de criar um elemento input separado-->
+                <label class="checkbox">Quero receber as novidades e descontos da Barbearia Alura em meu e-mail. <input type="checkbox" checked></label>  <!-- O input dentro do label elimina necessidade de criar um elemento input separado-->
 
                 <input type="submit" value="Enviar" class="botao-submit">
                 
