@@ -115,7 +115,7 @@ form {
 }
 
 
-form label, form p{
+form label, form legend{
     display: block;
     font-size: 18px;
     font-style: italic;
@@ -141,7 +141,7 @@ form label, form p{
 .botao-submit {
     font-size: 17px;
     margin: 15px 130px;
-    padding: 17px 70px;
+    padding: 15px 50px;
     border-radius: 10px;
 }
 

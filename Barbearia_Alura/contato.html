@@ -33,10 +33,11 @@
                <label for="mensagem">Mensagem: </label>
                <textarea rows="10" id="mensagem" class="input-padrao"></textarea>  <!-- O textarea permite inputs de usuários que não se limitam a apenas uma linha. Como é uma tag de conteúdo, ela abre e fecha. -->
                
-               <div>
-                    <p>Em qual canal você gostaria de receber nossa resposta?</p>
-
-                    <div class="opcoes">
+               <fieldset>
+                <!--A tag fildset é uma semantica melhrada. Serve para indicar que esse campo se refere a um mesmo assunto.-->
+                    <legend>Em qual canal você gostaria de receber nossa resposta?</legend>
+                <!--legend é a tag para indicar um título do fieldset-->
+                    <fieldset class="opcoes">
                            
                         <label for="radio-email">E-mail <input type="radio" name="contato" value="email" id="radio-email"></label>
                          
@@ -44,18 +45,18 @@
                           
                         <label for="radio-whatsapp">WhatsApp <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked></label>            
                     <!--checked deixa uma caixa marcada automaticamente, como sugestão-->
-                    </div>
+                    </fieldset>
                     <!-- radio é um botão que permite realizar uma opção entre um grupo de possibilidades. o atributo 'name agrupa essas opções, de forma a permitir que apenas uma delas fique marcada (sem isso, poderia-se escolher mais de uma opção) -->
-                </div>  
+               </fieldset>  
 
-                <div class="periodo">
-                    <p>Prefiro atendimento no seguinte período: </p>
+                <fieldset class="periodo">
+                    <legend>Prefiro atendimento no seguinte período: </legend>
                     <select>
                         <option>Manhã</option>
                         <option>Tarde</option>
                         <option>Noite</option>
                     </select>
-                </div>
+                </fieldset>
                                 
                 <label class="checkbox">Quero receber as novidades e descontos da Barbearia Alura em meu e-mail. <input type="checkbox" checked></label>  <!-- O input dentro do label elimina necessidade de criar um elemento input separado-->
 
