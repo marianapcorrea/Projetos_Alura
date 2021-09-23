@@ -174,7 +174,7 @@ select {
 .titulo-principal {
     text-align: center;
     font-size: 3em;
-    margin: 1em;
+    padding: 1.5em 0 0.75em;
     clear: left;
 }
 
@@ -194,4 +194,8 @@ select {
 
 .imagemBeneficios {
     width: 60%;
+}
+
+.mapa {
+    text-align: center;
 }
