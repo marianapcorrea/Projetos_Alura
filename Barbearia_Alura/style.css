@@ -1,5 +1,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 header{
@@ -34,7 +35,7 @@ nav a {
 
 .servicos {
     width: 940px;
-    margin: 0 auto;
+    margin: 100px auto;
     padding: 50px 0;
 }
 
@@ -82,14 +83,14 @@ nav a:hover {
 .atual {
     text-decoration: underline overline;
     text-decoration-style: dotted ;
-   }
+}
 
 .servicos li:hover {
     border-color: #c47c41;
-    }
+}
+
 .servicos li:hover h2{
     font-size: 34px
-
 }
 
 .servicos li:active {
@@ -110,7 +111,6 @@ footer {
 }
 
 main {
-    width: 940px;
     margin: 0 auto;
 }
 
@@ -125,7 +125,6 @@ form label, form legend{
     font-style: italic;
     margin: 0 0 10px;
 }
-
 
 .input-padrao {
     display: block;
@@ -171,6 +170,7 @@ select {
 .main-home {
     font-size: 1.2em;
     color: black;
+    background: linear-gradient(#ffffff,#a5a5a5, #686666) ;
 }
 .banner {
     width:100%;
@@ -186,6 +186,7 @@ select {
 
 .principal p {
     margin: 0 0 1em;
+    line-height: 1.2em;
 }
 
 .missao strong{
@@ -194,27 +195,24 @@ select {
 
 .utensilhos {
     float: left;
-    width: 170px;
+    width: 190px;
     margin: 0 20px 20px 0;
     border-radius: 20px;
 }
 
 .beneficios {
     padding: 0 3em;
-}
-
-.conteudo-beneficios {
-    width: 940px;
-    margin: 0 10px;
+    margin: 0 auto;
 }
 
 .itens {
     line-height: 2em;
+    margin: 0 auto;
 }
 
-.itens:nth-child(2n) {
-    font-weight: bold;
-} /*Cria uma subclasse que seleciona apenas os elementos-filhos pares (1n)*/
+.itens::before {
+    content: "✯";
+}
 
 .lista-beneficios {
     width: 40%;
@@ -223,14 +221,20 @@ select {
 }
 
 .imagemBeneficios {
-    width: 40%;
-    margin-left: 20px;
+    width: 45%;
     border-radius: 20px;
+    margin: 0 auto;
 }
 
 .mapa {
     text-align: center;
+    margin: 0 auto;
 }
 .mapa p{
     margin-bottom: 1em;
+}
+
+.mapa-iframe{
+    width: 940px;
+    margin: 0 auto;
 }
