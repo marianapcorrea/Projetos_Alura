@@ -116,6 +116,7 @@ main {
 
 form {
     margin: 40px 0;
+    text-align: center;
 }
 
 
@@ -127,7 +128,7 @@ form label, form legend{
 }
 
 .input-padrao {
-    display: block;
+    display: inline-block;
     margin: 0 0 20px;
     padding: 10px 30px;
     width: 50%;
@@ -241,3 +242,68 @@ select {
     width: 940px;
     margin: 0 auto;
 }
+
+/*Estilo para exibição em dispositivos móveis*/
+@media screen and (max-width: 480px) {
+    .caixa, .principal .conteudo-beneficios, .mapa-iframe, .servicos, .servicos li, .botao-submit{
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+    
+    .titulo-principal {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .principal p, .itens, .mapa p {
+        font-size: 0.75em;
+    }
+
+    .itens {
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+
+    .lista-beneficios, .imagemBeneficios {
+        width: 100%;
+    }
+
+    #copyright {
+        font-size: 0.75em;
+    }
+
+    .servicos {
+        margin: 0;
+    }
+
+    .servicos li{
+        margin: 1em 2em;
+
+    }
+
+    .botao-submit {
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    form {
+        margin: 2em;
+        text-align: center;
+    }
+
+    .input-padrao {
+        display: inline-block;
+    }
+
+} /*Define que esse estilo será usado para telas de, no máximo, 480px.*/
