@@ -182,6 +182,7 @@ select {
     font-weight: bold;
     padding: 1.5em 0 1em;
     clear: left;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .principal p {
@@ -198,6 +199,7 @@ select {
     width: 190px;
     margin: 0 20px 20px 0;
     border-radius: 20px;
+    box-shadow: 10px 10px 7px rgb(51, 50, 50);
 }
 
 .beneficios {
@@ -224,6 +226,7 @@ select {
     width: 45%;
     border-radius: 20px;
     margin: 0 auto;
+    box-shadow: 10px 10px 7px rgb(51, 50, 50);
 }
 
 .mapa {
