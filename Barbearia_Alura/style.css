@@ -131,7 +131,7 @@ form label, form legend{
     display: inline-block;
     margin: 0 0 20px;
     padding: 10px 30px;
-    width: 50%;
+    width: 30%;
 }
 
 .opcoes {
@@ -304,6 +304,7 @@ select {
 
     .input-padrao {
         display: inline-block;
+        width: 70%;
     }
 
 } /*Define que esse estilo será usado para telas de, no máximo, 480px.*/
