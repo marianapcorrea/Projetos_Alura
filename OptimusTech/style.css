@@ -80,11 +80,11 @@ button {
 
  /* Sessão 'Sobre nós' */
 
- .aboutUs{
+ header{
      padding-top:6em;
  }
 
- .aboutUs h3{
+ header h3{
      font-size: 1em;
      padding: auto;
  }
