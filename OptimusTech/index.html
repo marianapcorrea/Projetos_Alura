@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>OptimusTech</title>
     <meta
@@ -10,9 +17,9 @@
       content="Projeto proposto pelo programa '7daysOfCode - HTML & CSS' da Alura para o desenvolvimento de uma página destinada a novas contratações de uma empresa fictícia."
     />
   </head>
-  <>
-    <header class="navBar">
-      <div class="container">
+  <body>
+    <header>
+      <div class="navBar">
         <div class="logo">
           <img
             src="img/worldwide 1 (Traced).png"
@@ -26,7 +33,8 @@
           <a href="#">Recursos</a>
           <a href="#">Sobre nós</a>
         </div>
-        <div class="navigationActions">
+        <div class="emptySpace"></div>
+        <div class="buttons">
           <button>Entrar</button>
           <button id="join">Cadastrar</button>
         </div>
@@ -145,17 +153,17 @@
       </div>
     </section>
     <section class="form">
-        <div class="container">
-            <div class="text">
-                <h2>Acompanhe nossas oportunidades</h2>
-                <p>Seja o primeiro a saber quando novas vagas serão abertas!</p>
-            </div>
-            <div class="emailCapture">
-                <input type="email" placeholder="seuEmail@email.com"
-                <button id="join">Cadastrar</button>
-            </div>
+      <div class="container">
+        <div class="text">
+          <h2>Acompanhe nossas oportunidades</h2>
+          <p>Seja o primeiro a saber quando novas vagas serão abertas!</p>
         </div>
-        <footer>© 2022 OptimusTech. Todos os direitos reservados.</footer>
+        <div class="emailCapture">
+          <input type="email" placeholder="seuEmail@email.com" />
+          <button id="join">Cadastrar</button>
+        </div>
+      </div>
+      <footer>© 2022 OptimusTech. Todos os direitos reservados.</footer>
     </section>
   </body>
 </html>
