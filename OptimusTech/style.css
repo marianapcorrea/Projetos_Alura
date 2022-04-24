@@ -149,9 +149,9 @@ button {
     line-height: 1.5rem;
 }
 
-/* Sessão Vagas */
+/* Sessão Vagas - Talentos */
 .talents{
-    padding: 6em 7em 0;
+    padding: 6em 7em 4em;
     text-align:center;
 }
 
@@ -192,3 +192,46 @@ button {
     line-height: 1.88rem;
 }
 
+/* Sessão Vagas - Vagas abertas */
+
+.openVacancies{
+    margin:0 21em 7em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.openVacancies h3 {
+font-weight: 500;
+font-size: 1.25em;
+line-height: 1.88rem;
+color: var(--dark-grey);
+padding-bottom: 2rem;
+}
+
+.jobType{
+    padding-bottom: 4em;
+}
+
+.job{
+    padding: 1.5em;
+    border: solid 1px #EAECF0;
+    border-radius: 1em;
+    box-sizing: border-box;
+    width: 48em;
+    margin-bottom: 1.5rem;
+}
+
+.job h4{
+    color: var(--dark-grey);
+    font-size: 1.125em;
+    line-height: 1.75em;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.job p{
+    display: inline;
+    padding-right: 1.5rem;
+}
