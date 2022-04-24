@@ -1,6 +1,7 @@
 :root {
     --text-color: #667085;
     --main-color: #8E2424;
+    --dark-grey: #101828;
   }
 
 * {
@@ -69,9 +70,9 @@ button {
     cursor: pointer;
 }
  #join{
-    background: #8E2424;
+    background: var(--main-color);
     color:white;
-    border: 1px solid #8E2424;
+    border: 1px solid var(--main-color);
     box-sizing: border-box;    
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
@@ -81,10 +82,69 @@ button {
  /* Sessão 'Sobre nós' */
 
  .aboutUs{
-     padding-top:6em;
+     padding:6em 0 1.5em 0;
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+
  }
 
  .aboutUs h3{
      font-size: 1em;
-     padding: auto;
+     padding-bottom: 7rem;
+     font-weight: 600;
+     line-height: 1.5em;
+     color: var(--main-color);
  }
+
+ .aboutUs h1{
+     font-size: 3em;
+     color: var(--dark-grey);
+     padding-bottom: 2.25rem;
+ }
+
+.aboutUs p{
+    width: 40em;
+    font-size: 1.25em;
+    font-weight: 400px;
+    line-height: 1.85em;
+    text-align: center;
+}
+
+/* Sessão Metricas */
+
+.metrics {
+    padding:0 7em 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.metricItem {
+    flex-direction: column;
+    text-align: start;
+    padding-right: 2em;
+    width: 17.5em;  
+}
+
+.number{
+    font-size: 3.75em;
+    font-weight: bold;
+    color: var(--main-color);
+    line-height: 4.5rem;
+    padding-bottom:0.75rem;
+}
+
+.text {
+    font-size: 1.125em;
+    color: var(--dark-grey);
+    font-weight:500;
+    line-height: 1.75rem;
+    padding-bottom: 0.5em ;
+}
+
+.supportingText{
+    font-size: 1em;
+    font-weight:400;
+    line-height: 1.5rem;
+}
