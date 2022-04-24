@@ -235,3 +235,58 @@ padding-bottom: 2rem;
     display: inline;
     padding-right: 1.5rem;
 }
+
+/* Seção Depoimentos */
+.testimonys{
+    display:flex;
+    justify-content:center;
+}
+.testimonys .container{
+    padding: 0 7em 6em;
+    background-color: rgba(195, 25, 25, 0.03);
+    width: 76em;
+    border-radius: 1em;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.text h5{
+    padding:4em 4em 1em;
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 0.88em;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.text p{
+    font-size:2.25rem;
+    font-weight: 500;
+    line-height: 2.75rem;
+    text-align: center;
+    color: var(--dark-grey);
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attribution img{
+    padding: 2em 0; 
+}
+
+.name {
+    font-size:1em;
+    font-weight:500;
+    line-height: 1.5rem;
+    padding-bottom: 0.25em;
+    color: var(--dark-grey);
+}
+
+.occupation{
+    font-size:.88em;
+}
+
