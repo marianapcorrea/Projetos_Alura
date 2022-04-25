@@ -6,12 +6,14 @@
 }
 
 * {
+    border:0;
     margin: 0;
 	padding: 0;
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
     text-decoration: none;
     }
+
 
 /* Cabeçalho */
 .navBar {
@@ -176,6 +178,10 @@ button:active{
 }
 
 /* Sessão Vagas - Talentos */
+.vacancies{
+    padding:1em;
+}
+
 .talents{
     text-align:center;
 }
@@ -235,6 +241,7 @@ font-size: 1.25em;
 line-height: 1.88rem;
 color: var(--dark-grey);
 padding-bottom: 2rem;
+text-align: center;
 }
 
 .jobType{
@@ -267,6 +274,7 @@ padding-bottom: 2rem;
 .testimonys{
     display:flex;
     justify-content:center;
+    padding: 1em;
 }
 .testimonys .container{
     padding: 0 0 6em;
@@ -321,10 +329,11 @@ padding-bottom: 2rem;
     .form{
         background-color:#F9FAFB;
         margin-top:6em;
-        padding:6em 0;
+        padding:6em 1em;
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
     .form .container{
         padding-bottom: 2em;
@@ -367,11 +376,13 @@ padding-bottom: 2rem;
     footer {
         color: #98A2B3;
         font-size: 1em;
+        text-align: center;
+        padding: 1em;
     }
 
     @media(max-width:800px){
         body {
-            min-width:420px;
+            min-width:470px;
         }
     
         .emptySpace{
@@ -412,8 +423,8 @@ padding-bottom: 2rem;
         }
         
         .metricItem {
-            padding-bottom: 50px; 
-            flex: 1 0 auto;
+            padding:0 0 50px 0; 
+            flex-basis: auto;
             text-align: center;
         }
     
