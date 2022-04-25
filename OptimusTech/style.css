@@ -2,7 +2,8 @@
     --text-color: #667085;
     --main-color: #8E2424;
     --dark-grey: #101828;
-  }
+    --hover-color: #9c9da0;
+}
 
 * {
     margin: 0;
@@ -52,6 +53,14 @@
     flex-wrap: wrap;
 }
 
+.navigation a:hover{
+    color: var(--hover-color);
+}
+
+.navigation a:active{
+    font-weight:bolder;
+}
+
 .emptySpace {
     width: 8.9em;
 }
@@ -71,15 +80,32 @@ button {
     font-size: 1em;
     font-weight:500;
 }
- #join{
+
+button:hover {
+    color: var(--hover-color);
+}
+
+button:active{
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    font-weight:bolder;
+}
+
+#join{
     background: var(--main-color);
     color:white;
     border: 1px solid var(--main-color);
     box-sizing: border-box;    
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-    border-radius: 8px;
-    
- }
+    border-radius: 8px;   
+}
+
+#join:active{
+    color:var(--hover-color);
+    border:1px solid var(--hover-color);
+    font-weight:bolder;
+}
 
  /* Sessão 'Sobre nós' */
 
