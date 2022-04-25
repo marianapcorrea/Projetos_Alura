@@ -31,10 +31,6 @@
     height:24px;
 }
 
-.logo p{
-    padding-right:2em;
-}
-
 .logo img{
     height:27px;
     width:27px;
@@ -107,6 +103,7 @@ button:active{
     font-weight:bolder;
 }
 
+
  /* Sessão 'Sobre nós' */
 
  .aboutUs{
@@ -132,7 +129,7 @@ button:active{
  }
 
 .aboutUs p{
-    width: 40em;
+    width: 50%;
     font-size: 1.25em;
     font-weight: 400px;
     line-height: 1.85em;
@@ -175,16 +172,16 @@ button:active{
     font-size: 1em;
     font-weight:400;
     line-height: 1.5rem;
+    min-width:180px;
 }
 
 /* Sessão Vagas - Talentos */
 .talents{
-    padding: 6em 7em 4em;
     text-align:center;
 }
 
 .talents .container{
-    padding: 0 14rem  4em;
+    padding-bottom: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,8 +199,10 @@ button:active{
 }
 
 .talents img{
-    width:76em;
-    height:25em;
+    max-width:76em;
+    min-width:450px;    
+    width: 100%;
+    height:auto;
 }
 
 .talents .container h2{
@@ -223,7 +222,7 @@ button:active{
 /* Sessão Vagas - Vagas abertas */
 
 .openVacancies{
-    margin:0 21em 7em;
+    margin:4em 7em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -270,7 +269,7 @@ padding-bottom: 2rem;
     justify-content:center;
 }
 .testimonys .container{
-    padding: 0 7em 6em;
+    padding: 0 0 6em;
     background-color: rgba(195, 25, 25, 0.03);
     width: 76em;
     border-radius: 1em;
@@ -280,7 +279,7 @@ padding-bottom: 2rem;
 }
 
 .text h5{
-    padding:4em 4em 1em;
+    padding:4em 0 1.2em;
     color: var(--main-color);
     font-weight: 600;
     font-size: 0.88em;
@@ -351,6 +350,7 @@ padding-bottom: 2rem;
 
     .emailCapture {
         display:flex;
+        flex-wrap: wrap;
         justify-content:center;
     }
 
@@ -367,4 +367,101 @@ padding-bottom: 2rem;
     footer {
         color: #98A2B3;
         font-size: 1em;
+    }
+
+    @media(max-width:800px){
+        body {
+            min-width:420px;
+        }
+    
+        .emptySpace{
+            display: none;
+        }
+        .navBar{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-bottom:100px;
+        }
+
+        .logo{
+            padding:0 2em;
+        }
+        
+        
+        .buttons {
+            padding:30px 0;
+        }
+    
+        .navigation{
+            order:+2;
+        }
+    
+        .aboutUs {
+            justify-content:center;
+            text-align:center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+    
+        .aboutUs p{
+            min-width:80%;
+        }
+    
+        .metrics{
+            flex-wrap: wrap;
+        }
+        
+        .metricItem {
+            padding-bottom: 50px; 
+            flex: 1 0 auto;
+            text-align: center;
+        }
+    
+    
+        .talents{
+            display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex: 1 0 auto;
+        min-width: 420px;
+        }
+    
+        .talents .container{
+        padding: 10px;
+        }
+    
+        .openVacancies{
+             padding: 0 10px;
+             flex-wrap: nowrap;
+             margin: 0 2em;
+        }
+
+        .jobType{
+            padding-top: 2em;
+        }
+    
+        .job {
+            width: 100%;
+        }
+    
+        .job p{
+            display: inline-block;
+            padding:1em;
+        }   
+    
+        .testimonys .container .text p{
+            font-size:1.5em
+        }
+    }
+    
+
+    @media(max-width:530px) {
+        .emailCapture{
+            flex-direction: column;
+            align-content: center;
+        }
+
+        .emailCapture input{
+            margin: 0 0 1em 0;
+        }   
     }
