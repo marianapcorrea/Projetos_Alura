@@ -1,0 +1,84 @@
+/* Geral */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size:14px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    max-width:400px;
+    min-width:260px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+background-color: #faf8ff;
+margin: auto;
+
+}
+
+p {
+    color: #A3A3A3;
+}
+
+img{
+    border-radius: 50%;
+}
+
+/* Barra de status */
+
+/* Perfil */
+
+/* Consultas*/
+
+.buttons {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    padding:8px;
+}
+
+button {
+background-color: #FFF;
+width: 140px;
+height: 48px;
+color: #464646;
+text-align: center;
+padding:13px;
+margin:8px;
+font-weight: 600;
+}
+
+.audioCall:active {
+    border: 1px solid #fa8c00;
+    border-radius: 8px;
+}
+
+.videoCall{
+    background-color: #FFB050;
+    color: #FFF;
+    box-shadow: 0px 4px 16px rgba(255, 176, 80, 0.16);
+border-radius: 8px;
+}
+
+.videoCall:active {
+    border: 2px solid #fff;
+}
+
+.addressButton{
+    color: #FFF;
+    width: 296px;
+    background-color: #4894FF;
+box-shadow: 0px 4px 16px rgba(72, 148, 255, 0.16);
+border-radius: 8px;
+}
+
+.addressButton:active {
+    border: 2px solid #fff;
+}
+
