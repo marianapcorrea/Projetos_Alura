@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Clínica - Agenda Online</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <meta
+            name="description"
+            content="Projeto proposto pelo programa '7daysOfCode - HTML & CSS' da Alura para o desenvolvimento de uma página responsiva para que seus médicos e médicas contratados por uma clínica médica fictícia possam ter controle sobre todas suas consultas agendadas, sejam elas presenciais ou remotas."
+        />
+    </head>
+    <body>
+        <header class="statusbar">
+            <div class="time"></div>
+            <div class="icons">
+                <div class="wifi"></div>
+                <div class="battery"></div>
+                <div class="signal_celular"></div>
+            </div>
+        </header>
+        <section class="profile">
+            <div class="avatarHome">
+                <div class="avatar">
+                    <img src="/img/perfil-1.jpg" />
+                </div>
+                <div class="avatarText">
+                    <p>Olá, Sônia</p>
+                    <p>Mais quatro consultas hoje</p>
+                </div>
+            </div>
+        </section>
+        <section class="today dayBox">
+            <h2 class="day">Hoje</h2>
+            <div class="appontmentsContainer">
+                <div class="patientContainer">
+                    <div class="patientData">
+                        <div class="patientAvatar">
+                            <img src="img/perfil-2.jpg" />
+                        </div>
+                        <div class="data">
+                            <h3 class="patientName">Luciana Dias</h3>
+                            <div class="typeOfappointment">
+                                <div class="cameraIcon"></div>
+                                <p>Consulta remota</p>
+                            </div>
+                            <div class="messageIcon"></div>
+                        </div>
+                    </div>
+                    <div class="callButtons">
+                        <div class="callTime">
+                            <p>14:00 - 15:00 (1 hora)</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="videoCall"></button>
+                            <button class="audioCall"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="patientContainer">
+                    <div class="patientData">
+                        <div class="patientAvatar">
+                            <img src="img/perfil-3.jpg" />
+                        </div>
+                        <div class="data">
+                            <h3 class="patientName">Larissa Santana</h3>
+                            <div class="typeOfappointment">
+                                <div class="cameraIcon"></div>
+                                <p>Consulta no local</p>
+                            </div>
+                            <div class="messageIcon"></div>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <div class="callTime">
+                            <p>16:00 - 17:00 (1 hora)</p>
+                        </div>
+                        <div class="buttons">
+                            <button
+                                class="addressButton"
+                                type="button"
+                            ></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="patientContainer">
+                    <div class="patientData">
+                        <div class="patientAvatar">
+                            <img src="img/perfil-4.jpg" />
+                        </div>
+                        <div class="data">
+                            <h3 class="patientName">Marcos Correia</h3>
+                            <div class="typeOfappointment">
+                                <div class="cameraIcon"></div>
+                                <p>Consulta remota</p>
+                            </div>
+                            <div class="messageIcon"></div>
+                        </div>
+                    </div>
+                    <div class="callButtons">
+                        <div class="callTime">
+                            <p>17:20 - 18:00 (40 minutos)</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="videoCall"></button>
+                            <button class="audioCall"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tomorow dayBox">
+            <h2 class="day">Amanhã</h2>
+            <div class="appontmentsContainer">
+                <div class="patientContainer">
+                    <div class="patientData">
+                        <div class="patientAvatar">
+                            <img src="img/perfil-5.jpg" />
+                        </div>
+                        <div class="data">
+                            <h3 class="patientName">Clara Lemos</h3>
+                            <div class="typeOfappointment">
+                                <div class="cameraIcon"></div>
+                                <p>Consulta no Local</p>
+                            </div>
+                            <div class="messageIcon"></div>
+                        </div>
+                    </div>
+                    <div class="callButtons">
+                        <div class="callTime">
+                            <p>18:00 - 19:00 (1 hora)</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="addressButton"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="patientContainer">
+                    <div class="patientData">
+                        <div class="patientAvatar">
+                            <img src="img/perfil-2.jpg" />
+                        </div>
+                        <div class="data">
+                            <h3 class="patientName">Luciana Dias</h3>
+                            <div class="typeOfappointment">
+                                <div class="cameraIcon"></div>
+                                <p>Consulta remota</p>
+                            </div>
+                            <div class="messageIcon"></div>
+                        </div>
+                    </div>
+                    <div class="callButtons">
+                        <div class="callTime">
+                            <p>14:00 - 15:00 (1 hora)</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="videoCall"></button>
+                            <button class="audioCall"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="patientContainer">
+                    <div class="patientData">
+                        <div class="patientAvatar">
+                            <img src="img/perfil-4.jpg" />
+                        </div>
+                        <div class="data">
+                            <h3 class="patientName">Marcos Correia</h3>
+                            <div class="typeOfappointment">
+                                <div class="cameraIcon"></div>
+                                <p>Consulta remota</p>
+                            </div>
+                            <div class="messageIcon"></div>
+                        </div>
+                    </div>
+                    <div class="callButtons">
+                        <div class="callTime">
+                            <p>17:20 - 18:00 (40 minutos)</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="videoCall"></button>
+                            <button class="audioCall"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="patientContainer">
+                    <div class="patientData">
+                        <div class="patientAvatar">
+                            <img src="img/perfil-3.jpg" />
+                        </div>
+                        <div class="data">
+                            <h3 class="patientName">Larissa Santana</h3>
+                            <div class="typeOfappointment">
+                                <div class="cameraIcon"></div>
+                                <p>Consulta no local</p>
+                            </div>
+                            <div class="messageIcon"></div>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <div class="callTime">
+                            <p>16:00 - 17:00 (1 hora)</p>
+                        </div>
+                        <div class="buttons">
+                            <button
+                                class="addressButton"
+                                type="button"
+                            ></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wednesday dayBox">
+            <h2 class="day">Amanhã</h2>
+            <div class="appontmentsContainer">
+                <div class="patientContainer">
+                    <div class="patientData">
+                        <div class="patientAvatar">
+                            <img src="img/perfil-5.jpg" />
+                        </div>
+                        <div class="data">
+                            <h3 class="patientName">Clara Lemos</h3>
+                            <div class="typeOfappointment">
+                                <div class="cameraIcon"></div>
+                                <p>Consulta no Local</p>
+                            </div>
+                            <div class="messageIcon"></div>
+                        </div>
+                    </div>
+                    <div class="callButtons">
+                        <div class="callTime">
+                            <p>18:00 - 19:00 (1 hora)</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="addressButton"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="patientContainer">
+                    <div class="patientData">
+                        <div class="patientAvatar">
+                            <img src="img/perfil-2.jpg" />
+                        </div>
+                        <div class="data">
+                            <h3 class="patientName">Luciana Dias</h3>
+                            <div class="typeOfappointment">
+                                <div class="cameraIcon"></div>
+                                <p>Consulta remota</p>
+                            </div>
+                            <div class="messageIcon"></div>
+                        </div>
+                    </div>
+                    <div class="callButtons">
+                        <div class="callTime">
+                            <p>14:00 - 15:00 (1 hora)</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="videoCall"></button>
+                            <button class="audioCall"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="patientContainer">
+                    <div class="patientData">
+                        <div class="patientAvatar">
+                            <img src="img/perfil-4.jpg" />
+                        </div>
+                        <div class="data">
+                            <h3 class="patientName">Marcos Correia</h3>
+                            <div class="typeOfappointment">
+                                <div class="cameraIcon"></div>
+                                <p>Consulta remota</p>
+                            </div>
+                            <div class="messageIcon"></div>
+                        </div>
+                    </div>
+                    <div class="callButtons">
+                        <div class="callTime">
+                            <p>17:20 - 18:00 (40 minutos)</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="videoCall"></button>
+                            <button class="audioCall"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="patientContainer">
+                    <div class="patientData">
+                        <div class="patientAvatar">
+                            <img src="img/perfil-3.jpg" />
+                        </div>
+                        <div class="data">
+                            <h3 class="patientName">Larissa Santana</h3>
+                            <div class="typeOfappointment">
+                                <div class="cameraIcon"></div>
+                                <p>Consulta no local</p>
+                            </div>
+                            <div class="messageIcon"></div>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <div class="callTime">
+                            <p>16:00 - 17:00 (1 hora)</p>
+                        </div>
+                        <div class="buttons">
+                            <button
+                                class="addressButton"
+                                type="button"
+                            ></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
