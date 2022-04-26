@@ -9,16 +9,19 @@
 }
 
 body {
-    max-width:400px;
     min-width:260px;
     display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    align-content: center;
-background-color: #faf8ff;
-margin: auto;
+    justify-content: center;
+    margin: auto;
+    background-color: #cbc6c6;
+}
 
+.allContentContainer{
+    width:400px;
+    background-color: #faf8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 p {
@@ -30,6 +33,34 @@ img{
 }
 
 /* Barra de status */
+.statusBar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:6px 8px;
+    height: 35px;
+    width:100%;    background-color:#fff;
+    position:relative;
+    box-sizing: border-box;
+}
+
+.statusBar p{
+    color: #333333;
+    font-weight: 40px;
+} 
+
+.icons{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.icons img{
+    height: 14px;
+    width: auto;
+    padding: 8px;
+
+}
 
 /* Perfil */
 
