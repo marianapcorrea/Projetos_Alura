@@ -1,3 +1,7 @@
+:root {
+    --darkGrey: #464646;
+}
+
 /* Geral */
 * {
     margin: 0;
@@ -67,25 +71,87 @@ img{
     display: flex;
     flex-direction: row;
     padding:32px 16px 22px;
-    align-items:flex-start;
-
-    
 }
 
 .avatar img{
     width:58px;
 }
 
+.avatarText{
+    padding-left:16px;
+}
+
 .avatarText h1{
     font-size:22px;
     font-weight:700px;
-    color: #464646;
-    line-height: 160%;
-    padding-left:16px;
-
+    color: var(--darkGrey);
+    line-height: 160%;    
 }
 
 /* Consultas*/
+.day{
+    color: var(--darkGrey);
+    padding:8px 16px;
+    font-size:16px;
+    font-weight:700;
+    line-height: 160%;
+}
+
+.appontmentsContainer{
+    padding: 0 16px 8px;
+}
+
+.patientContainer{
+    background-color: #fff;
+    padding:16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.patientData{
+    display:flex;
+    flex-direction: row;
+    border-bottom: 1px solid 
+    rgba(70, 70, 70, 0.1);
+    padding-bottom:16px ;
+}
+
+.data{
+    padding:0 16px;
+}
+
+.typeOfappointment{
+    display:flex;
+    flex-wrap: wrap;
+    padding-top: 8px;
+}
+
+.camera::before{
+    padding-right: 8px;
+    content: url(img/icons/Camera.png);
+}
+
+.pin::before{
+    padding-right: 8px;
+    content: url(img/icons/pin.png);
+}
+
+.messageIcon{
+    border-radius:50%;
+    background-color: #F0f0f0;
+    height:32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:100px;
+}
+
+.messageIcon span{
+    content: url(img/icons/chat1.png);
+    align-self: center;
+}
 
 .buttons {
     display:flex;
@@ -99,7 +165,7 @@ button {
 background-color: #FFF;
 width: 140px;
 height: 48px;
-color: #464646;
+color: var(--darkGrey);
 text-align: center;
 padding:13px;
 margin:8px;
@@ -134,3 +200,8 @@ border-radius: 8px;
     border: 2px solid #fff;
 }
 
+.callTime p{
+    color: var(--darkGrey);
+    padding:8px 16px;
+    font-weight: 500;
+}
