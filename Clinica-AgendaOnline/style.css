@@ -14,13 +14,12 @@
 
 body {
     min-width:260px;
-    display: flex;
-    justify-content: center;
     margin: auto;
     background-color: #cbc6c6;
 }
 
 .allContentContainer{
+    margin: auto;
     width:400px;
     background-color: #faf8ff;
     display: flex;
