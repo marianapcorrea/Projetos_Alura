@@ -1,5 +1,6 @@
 :root {
     --darkGrey: #464646;
+    --buttonBlue: #4894FF;
 }
 
 /* Geral */
@@ -43,8 +44,9 @@ img{
     padding:6px 8px;
     height: 35px;
     width:100%;    background-color:#fff;
-    position:relative;
+    position:fixed;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 .statusBar p{
@@ -204,3 +206,61 @@ border-radius: 8px;
     padding:8px 16px;
     font-weight: 500;
 }
+
+/* Display */
+footer {
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #fff;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+}
+
+.footerContainer button {
+font-size:12px;
+font-weight:400;
+width:auto;
+margin: 8px 0;
+padding:8px;
+}
+
+.footerContainer button:active {
+    border: 1px solid var(--buttonBlue);
+}
+
+.footerContainer img{
+height: 20px;
+width: auto;
+border-radius: 0;
+}
+
+#floatButton{
+    position: fixed;
+    z-index: 1;
+    right:16px;
+    top:50%;
+    background-color: var(--buttonBlue);
+    border-radius: 50%;
+    width:56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.5));
+}
+
+#floatButton img {
+    width: 16px;
+    height: auto;
+}
+
+#floatButton:active { 
+    border: 1px solid #fff;
+}
+
