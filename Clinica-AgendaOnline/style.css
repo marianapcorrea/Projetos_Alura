@@ -14,18 +14,18 @@
 }
 
 body {
-    min-width:260px;
+    min-width:max-content;
     margin: auto;
     background-color: #cbc6c6;
 }
 
 .allContentContainer{
     margin: auto;
-    width:400px;
     background-color: #faf8ff;
     display: flex;
     flex-direction: column;
 }
+
 
 p {
     color: #A3A3A3;
@@ -41,7 +41,7 @@ img{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:6px 8px;
+    padding:6px 24px;
     height: 35px;
     width:100%;    background-color:#fff;
     position:fixed;
@@ -51,7 +51,7 @@ img{
 
 .statusBar p{
     color: #333333;
-    font-weight: 40px;
+    font-weight: 400;
 } 
 
 .icons{
@@ -71,7 +71,7 @@ img{
 .avatarHome{
     display: flex;
     flex-direction: row;
-    padding:32px 16px 22px;
+    padding:64px 16px 22px;
 }
 
 .avatar img{
@@ -112,13 +112,23 @@ img{
 .patientData{
     display:flex;
     flex-direction: row;
+    justify-content:space-between;
     border-bottom: 1px solid 
     rgba(70, 70, 70, 0.1);
     padding-bottom:16px ;
 }
 
+.patientInformation{
+    flex-direction: row;
+    display: flex;
+}
+
 .data{
     padding:0 16px;
+}
+
+.patientName{
+    flex-wrap: wrap;
 }
 
 .typeOfappointment{
@@ -145,8 +155,6 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    left:100px;
 }
 
 .messageIcon span{
@@ -154,9 +162,14 @@ img{
     align-self: center;
 }
 
+.messageIcon:active{
+    border: 1px solid var(--buttonBlue);
+}
+
 .buttons {
     display:flex;
     flex-direction:row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding:8px;
@@ -171,6 +184,7 @@ text-align: center;
 padding:13px;
 margin:8px;
 font-weight: 600;
+cursor: pointer;
 }
 
 .audioCall:active {
@@ -208,6 +222,10 @@ border-radius: 8px;
 }
 
 /* Display */
+.wednesday{
+    margin-bottom: 64px;
+}
+
 footer {
     display: flex;
     flex-direction: row;
@@ -244,7 +262,7 @@ border-radius: 0;
     position: fixed;
     z-index: 1;
     right:16px;
-    top:50%;
+    bottom: 80px;
     background-color: var(--buttonBlue);
     border-radius: 50%;
     width:56px;
@@ -264,3 +282,35 @@ border-radius: 0;
     border: 1px solid #fff;
 }
 
+/* Responsividade */
+@media (min-width: 640px) and (max-width:1149px) {
+    .appontmentsContainer{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-items: center;
+        justify-content: space-around;
+    }
+
+    .patientContainer{
+        margin:16px;
+        width: 100%;
+
+    }
+    
+}
+
+@media (min-width: 1150px) {
+    .appontmentsContainer{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-items: center;
+        justify-content: space-around;
+    }
+
+    .patientContainer{
+        margin:16px;
+        width: 100%;
+
+    }
+    
+}   
