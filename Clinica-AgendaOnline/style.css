@@ -258,10 +258,14 @@ width: auto;
 border-radius: 0;
 }
 
+#check{
+    display:none;
+}
+
 #floatButton{
     position: fixed;
-    z-index: 1;
-    right:16px;
+    z-index: 3;
+    right:14px;
     bottom: 80px;
     background-color: var(--buttonBlue);
     border-radius: 50%;
@@ -271,6 +275,7 @@ border-radius: 0;
     justify-content: center;
     align-items: center;
     filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.5));
+    cursor: pointer;
 }
 
 #floatButton img {
@@ -278,9 +283,69 @@ border-radius: 0;
     height: auto;
 }
 
-#floatButton:active { 
-    border: 1px solid #fff;
+#floatButton:active, .options button:active{ 
+    border: 2px solid #fff;
 }
+
+.containerOptions {
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    opacity: 60%;
+    z-index: 1;
+    position: fixed;
+}
+
+.buttonOptions {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    bottom: 0px;
+    padding-bottom: 144px;
+}
+
+.options{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 8px;
+}
+
+.options button{
+    background-color: var(--buttonBlue);
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pinIcon{
+    width: 20px;
+    height: 24px;
+}
+
+.cameraIcon{
+    width: 24px;
+    height: 19px;
+}
+
+.optionText{
+    background-color:#FFF;
+    padding:2px 8px;
+    border-radius: 12px 12px ;
+}
+
+#addOptions{
+    display:none;
+}
+
+#check:checked ~ #addOptions{ 
+    display:block;
+}
+
 
 /* Responsividade */
 @media (min-width: 640px) and (max-width:1149px) {
