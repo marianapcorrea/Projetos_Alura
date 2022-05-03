@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Clínica - Adicionar Consulta</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <meta
+            name="description"
+            content="Projeto proposto pelo programa '7daysOfCode - HTML & CSS' da Alura para o desenvolvimento de uma página responsiva para que seus médicos e médicas contratados por uma clínica médica fictícia possam ter controle sobre todas suas consultas agendadas, sejam elas presenciais ou remotas."
+        />
+    </head>
+    <body>
+<form>
+                            <span>
+                                <label for="name">Nome do paciente:</label>
+                            <input type="text" id="name"></input>
+                            </span>
+                            <span>
+                                <label for="typeOfappointment">Tipo de consulta:</label>
+                                <input type="radio" id="typeOfappointment"><p>Consulta Remota</p></input>
+                                <input type="radio" id="typeOfappointment"><p>Consulta no Local</p></input>
+                            </span>
+                            <span>
+                                <label for="dateOfAppointment">Data da consulta:</label>
+                                <input type="date" id="dateOfAppointment"></input>
+                            </span>
+                            <span>
+                                <label for="timeOfAppointment">Hora da consulta:</label>
+                                <input type="time" id="timeOfAppointment"></input>
+                            </span>
+                            <span>
+                                <label for="observations">Hora da consulta:</label>
+                                <input type="text" id="observations"></input>
+                            </span>
+                            <button type="submit">Salvar Consulta</button>
+                            <button type="button"><a href="index.html">Voltar para agenda</button>
+
+                        </form>
+    </body>
