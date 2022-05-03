@@ -226,7 +226,7 @@ border-radius: 8px;
     margin-bottom: 64px;
 }
 
-footer {
+nav {
     display: flex;
     flex-direction: row;
     position:fixed;
@@ -258,7 +258,9 @@ width: auto;
 border-radius: 0;
 }
 
-#check{
+/* FloatButton */
+
+.check{
     display:none;
 }
 
@@ -346,6 +348,26 @@ border-radius: 0;
     display:block;
 }
 
+.addButtonDesktop{
+    background-color: var(--buttonBlue);
+    width: auto;
+    height: 64px;
+    border-radius: 12px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#addOptions #desktop{
+    display:none;
+}
+
+.addButtonDesktop a{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+}
 
 /* Responsividade */
 @media (min-width: 640px) and (max-width:1149px) {
@@ -359,7 +381,6 @@ border-radius: 0;
     .patientContainer{
         margin:16px;
         width: 100%;
-
     }
     
 }
@@ -375,7 +396,32 @@ border-radius: 0;
     .patientContainer{
         margin:16px;
         width: 100%;
+        flex:0 1 auto;
+    }
 
+    .addButtonDesktop{
+        display: flex;
+    }
+    
+    .addButtonDesktop:active {
+        border: 2px solid #fff;
+    }
+
+    #floatButton{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        position: fixed;
+        height: 100vh;
+        width:15%
+    }
+
+    main{
+        margin-left: 20%;
     }
     
 }   
