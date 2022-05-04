@@ -260,7 +260,7 @@ border-radius: 0;
 
 /* FloatButton */
 
-.check{
+#check{
     display:none;
 }
 
@@ -359,10 +359,6 @@ border-radius: 0;
     padding: 20px;
 }
 
-#addOptions #desktop{
-    display:none;
-}
-
 .addButtonDesktop a{
     color: #FFF;
     font-size: 16px;
@@ -395,7 +391,7 @@ border-radius: 0;
 
     .patientContainer{
         margin:16px;
-        width: 100%;
+        width: 90%;
         flex:0 1 auto;
     }
 
